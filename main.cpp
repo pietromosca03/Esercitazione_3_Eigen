@@ -21,7 +21,7 @@ double soluzioneconQR(const Matrix2d& A, const Vector2d& b) {
     return errore;
 }
 
-void print(const Matrix2d& A, Vector2d& b, const string& matrice){
+void print(const Matrix2d& A,const Vector2d& b, const string& matrice){
     cout << "l'errore di approssimazione usando la fattorizzazione PALU per " << matrice <<" è:"<< setprecision(30) << scientific << soluzioneconPALU(A,b)<<endl;
     cout << "l'errore di approssimazione usando la fattorizzazione QR per " << matrice <<" è:"<< setprecision(30) << scientific << soluzioneconQR(A,b)<<endl;
 }
